@@ -38,11 +38,15 @@ export class NewCoffeeComponent {
         console.log('Coffee created successfully:', response);
         alert('Coffee created successfully: ' + JSON.stringify(response));
       },
-      error => {
-        console.error('Error creating coffee:', error);
-      }
-    );
+      error => { 
+        if (error.status === 500) { 
+          alert('Internal Server Error. Please try again later.'); 
+        } else { 
+          alert('Error creating coffee: ' + JSON.stringify(error));
+        }
   }
+    );
 
+}
 }
 
