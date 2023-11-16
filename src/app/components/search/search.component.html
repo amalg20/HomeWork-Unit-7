@@ -1,0 +1,23 @@
+<form (submit)="search()">
+  <input type="text" [(ngModel)]="queryName" name="queryName" />
+  <button type="submit">Search</button>
+</form>
+
+<div *ngFor="let coffee of coffees">
+  <div *ngIf="coffee">
+    <mat-card class="coffee-card">
+      <mat-card-header>
+        <img mat-card-image src="{{ coffee.image_url }}" alt="Coffee Image">
+
+
+      </mat-card-header>
+      <mat-card-content>
+        <mat-card-title level="3">{{ coffee.name }}</mat-card-title>
+        <mat-card-subtitle>{{ coffee.tagline }}</mat-card-subtitle>
+        <mat-card-subtitle> Contributed by: {{ coffee.contributed_by }}</mat-card-subtitle>
+        <a mat-button routerLink="/coffee-details/{{ coffee._id }}">Details</a>
+      </mat-card-content>
+    </mat-card>
+
+  </div>
+</div>

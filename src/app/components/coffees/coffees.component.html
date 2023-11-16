@@ -1,0 +1,21 @@
+<app-navbar></app-navbar>
+<app-search (searchTextEvent)="searchText($event)"></app-search>
+<div *ngFor="let coffee of coffees">
+  <mat-card class="coffee-card">
+    <mat-card-header>
+      <img mat-card-image src="{{ coffee.image_url }}" alt="Coffee Image">
+
+
+    </mat-card-header>
+    <mat-card-content>
+      <mat-card-title level="3">{{ coffee.name }}</mat-card-title>
+      <mat-card-subtitle>{{ coffee.tagline }}</mat-card-subtitle>
+      <mat-card-subtitle> Contributed by: {{ coffee.contributed_by }}</mat-card-subtitle>
+      <a mat-button routerLink="/coffee-details/{{ coffee._id }}">Details</a>
+    </mat-card-content>
+    <ng-container *ngIf="showDetails">
+      <app-coffee-details [id]="coffee.id" [name]="coffee" [coffeeProp]="coffee"></app-coffee-details>
+    </ng-container>
+  </mat-card>
+
+</div>

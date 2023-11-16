@@ -1,0 +1,33 @@
+.coffee-card mat-card-title, mat-card-subtitle{ 
+    color: rgb(26, 72, 120); 
+} 
+.coffee-card { 
+    margin: 20px; 
+    padding: 10px; 
+    background-color: #fff; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    border-radius: 4px; 
+  } 
+   
+  .coffee-card img { 
+    width: 100px; 
+    align-self: center; 
+    border-radius: 5px; 
+  } 
+   
+  .coffee-card-content { 
+    margin-top: 10px; 
+  } 
+   
+  .coffee-card a { 
+    text-decoration: none; 
+    color: rgb(93, 152, 215); 
+    font-size: 18px; 
+  } 
+   
+  form{ 
+    margin-left: 30px; 
+  } 
+input{ 
+    width: 300px; 
+}

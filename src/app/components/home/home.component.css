@@ -1,0 +1,40 @@
+.welcome-card {
+    padding: 20px;
+    background-color: rgb(234, 240, 243);
+  }
+  
+  .welcome-card mat-card-title {
+    font-size: 28px;
+    padding: 30px;
+    
+  }
+
+  .welcome-card img{
+    border-radius: 5px;
+  }
+  
+  .welcome-card mat-button {
+    background-color: #b0dae7;
+    color: white;
+    padding: 10px;
+  }
+  
+  .welcome-card mat-card{
+    margin: 10px;
+  }
+
+  .coffee-card mat-card-title{
+    color: rgb(26, 72, 120);
+  }
+
+  .coffee-card p{
+    color: rgb(26, 72, 120);
+    font-size: 18px;
+  }
+
+  
+  .coffee-card a {
+    text-decoration: none;
+    color: rgb(93, 152, 215);
+    font-size: 18px;
+  }

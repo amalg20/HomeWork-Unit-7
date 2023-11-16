@@ -1,0 +1,22 @@
+<app-navbar></app-navbar>
+<div *ngIf="coffee">
+  <mat-card class="coffee-card">
+    <mat-card-header>
+      <mat-card-title [ngStyle]="{ 'font-family': 'serif', 'font-size': '25px'}">{{ coffee.name }}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <img mat-card-image src="{{ coffee.image_url }}" alt="Coffee Image">
+      <mat-card-subtitle>First Roasted: </mat-card-subtitle>
+      <p> {{ coffee.first_roasted }}</p>
+      <mat-card-subtitle>Strength Level: </mat-card-subtitle>
+      <p>{{ coffee.strength_level }}</p>
+      <mat-card-subtitle>Tagline: </mat-card-subtitle>
+      <p>{{ coffee.strength_level }}</p>
+      <mat-card-subtitle>Description: </mat-card-subtitle>
+      <p>{{ coffee.description }}</p>
+      <mat-card-subtitle>Contributed by: </mat-card-subtitle>
+      <p>{{ coffee.contributed_by }}</p>
+    </mat-card-content>
+  </mat-card>
+
+</div>

@@ -1,0 +1,44 @@
+<div class="welcome-card">
+
+  <mat-card-title level="2"
+    [ngStyle]="{ 'font-family': 'system-ui', 'font-size': '35px', 'color': 'rgb(26, 72, 120)',  'font-weight': 'bold'}">Welcome
+    to IronCoffee</mat-card-title>
+
+
+  <mat-card-content>
+    <div class="d-flex flex-wrap justify-content-center">
+      <mat-card class="coffee-card">
+        <mat-card-header>
+          <mat-card-title>All Coffees</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <img mat-card-image src="assets/coffees.jpg" alt="All Coffees" width="50%">
+          <p>A list of all coffee in the database</p>
+          <a mat-button routerLink="/coffees">All Coffees</a>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card class="coffee-card">
+        <mat-card-header>
+          <mat-card-title>New Coffee</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <img mat-card-image src="assets/new-coffee.jpg" alt="New Coffee" width="50%">
+          <p>Add a new coffee to the Database</p>
+          <a mat-button routerLink="/new-coffee">New Coffee</a>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card class="coffee-card">
+        <mat-card-header>
+          <mat-card-title>Random Coffee</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <img mat-card-image src="assets/random-coffee.jpg" alt="Random Coffee" width="50%">
+          <p>Let us choose a Coffee for you to look at!</p>
+          <a mat-button routerLink="/random-coffee">Random Coffee</a>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </mat-card-content>
+</div>
