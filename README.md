@@ -2,9 +2,23 @@
 
 IronCoffees is an Angular application that showcases and saves handcrafted coffees. It provides a user-friendly interface to browse, search, and create new coffee.
 
+## Technologies Used:
+ - Angular Framework.
+ - VS Code Editor.
+ - Html.
+ - CSS.
+ - TypeScript.
+ - NodeJS.
+
+## Prerequisits:
+
+- install Nodejs.
+- VS Code Editor.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+
 
 ## The IronCoffees project includes the following Routes:
 
@@ -26,6 +40,9 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Developer team:
+ - Alaa.
+ - Amal.
+ - Nuha.
+ - Manar.
+ - Tumadhir.
